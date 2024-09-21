@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Aesthetic serif font similar to the reference */
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+            grid-gap: 40px; /* Increased gap for aesthetic spacing */
+            justify-items: center;
+        }
+        .project-box {
+            background-color: #fff;
+            border-radius: 12px; /* Rounded corners for a modern feel */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+            width: 400px; /* Larger width */
+            padding: 30px; /* More padding for the content */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-box:hover {
+            transform: translateY(-10px); /* Lift effect on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+        }
+        .project-image {
+            width: 120px; /* Slightly larger image */
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .project-title {
+            font-size: 28px; /* Larger font for titles */
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif; /* Serif font for titles */
+        }
+        .project-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .project-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Projects</h1>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-box">
+            
+            <h2 class="project-title">BACE1 Inhibitor Prediction Using Machine Learning and Deep Neural Networks
+</h2>
+            <p class="project-description">This project focuses on predicting the pIC50 values for beta-secretase 1 (BACE1) inhibitors, an important target for Alzheimer's disease drug discovery. Molecules with reported IC50 values were sourced from the ChEMBL database, followed by Exploratory Data Analysis (EDA). Various machine learning (ML) models, including traditional regression techniques and deep neural networks, such as Graph Neural Networks (GNN), were developed to predict pIC50. Additionally, a Graphical User Interface (GUI) was built to allow users to input SMILES and receive predicted pIC50 values.</p>
+            <a href="https://github.com/username/project1" class="project-link" target="_blank">View GitHub Repository</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            
+            <h2 class="project-title">Project 2</h2>
+            <p class="project-description">A brief description of Project 2. This project is a Python-based tool for data analysis.</p>
+            <a href="https://github.com/username/project2" class="project-link" target="_blank">View GitHub Repository</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-box">
+            
+            <h2 class="project-title">Chemtools: Python Scripts for Chemical Structure Analysis</h2>
+            <p class="project-description">Chemtools is a collection of Python scripts designed to streamline calculations and analysis related to chemical structures. It offers functionality for descriptor calculation, substructure searching, and functional group modifications, making it a versatile tool for cheminformatics tasks. Built using the RDKit, numpy, and pandas libraries, Chemtools provides efficient solutions for a wide range of chemical structure operations.</p>
+            <a href="https://github.com/Erandi44/Chemistry_Tools" class="project-link" target="_blank">View GitHub Repository</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-box">
+            
+            <h2 class="project-title">Netflix TV Show and Movie Ratings Analysis</h2>
+            <p class="project-description">This project analyzes Netflix TV shows and movies based on ratings over different years and user score ratings. The dataset includes TV shows and movies available on Netflix as of 2021. Through data analysis and visualization, the project explores patterns and trends in Netflix content ratings.</p>
+            <a href="https://github.com/Erandi44/EDA_of_netflix_data_using_python" class="project-link" target="_blank">View GitHub Repository</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
